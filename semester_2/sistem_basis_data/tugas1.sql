@@ -34,5 +34,5 @@ SELECT * FROM chats;
 SELECT id, message_text FROM chats WHERE sender_id = 5;
 
 -- Mengubah message_text dari id = 7
-UPDATE chats SET message_text = "ditelan kucing peliharaan saya :()"
+UPDATE chats SET message_text = "ditelan kucing peliharaan saya :("
 WHERE id = 7;
