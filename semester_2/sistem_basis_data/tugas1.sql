@@ -2,7 +2,7 @@
 
 -- Membuat database baru dengan nama SBD
 CREATE DATABASE SBD;
--- USE chats;
+-- USE SBD;
 
 -- Membuat tabel chats
 CREATE TABLE chats (
