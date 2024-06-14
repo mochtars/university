@@ -4,7 +4,7 @@
 CREATE DATABASE SBD;
 -- USE SBD;
 
--- Membuat tabel chats
+-- Membuat tabel chats dengan kolom id, sender_id, receiver_id, message_text, dan timestamp
 CREATE TABLE chats (
   id INT AUTO_INCREMENT PRIMARY KEY,
   sender_id INT NOT NULL,
@@ -28,11 +28,14 @@ VALUES
   (11, 5, 'ngga, knp dek?'),
   (5, 11, 'gpp.');
 
--- Menampilkan semua data
+-- Menampilkan semua data dari tabel chats
 SELECT * FROM chats;
--- Menampilkan id dan message_text dengan sender_id = 5 dari tabel chats 
+-- Menampilkan id dan message_text yang ada pada sender_id = 5 dari tabel chats 
 SELECT id, message_text FROM chats WHERE sender_id = 5;
 
--- Mengubah message_text dari id = 7
+-- Mengubah message_text yang ada pada id = 7 di tabel chats
 UPDATE chats SET message_text = "ditelan kucing peliharaan saya :("
 WHERE id = 7;
+
+-- Menghapus table 'chats'
+DROP TABLE chats;
