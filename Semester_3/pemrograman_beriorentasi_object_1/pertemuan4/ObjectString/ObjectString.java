@@ -7,10 +7,10 @@ class Kendaraan {
 
   // Default Constructor
   public Kendaraan() {
-    this.nama = "Tidak ada";
-    this.jenis = "Mobil";
-    this.warna = "Merah";
-    this.plat = new char[] {'D', '4', 'B', '1', 'T'};
+    this.nama = "";
+    this.jenis = "";
+    this.warna = "";
+    this.plat = new char[] {};
   }
 
   // Overloading Constructor
@@ -23,7 +23,7 @@ class Kendaraan {
 
   // Method to access object members
   void displayInfo() {
-    System.out.println("Nama: " + this.nama + ", Jenis: " + this.jenis + ", Warna: " + this.warna + ", plat: " + String.valueOf(this.plat));
+    System.out.println("Nama: " + this.nama + ", Jenis: " + this.jenis + ", Warna: " + this.warna + ", Plat: " + String.valueOf(this.plat));
   }
 }
 
@@ -45,7 +45,7 @@ public class ObjectString {
     Kendaraan1.displayInfo();
 
     // Working with Literal String
-    String stringLiteral = "Selamat datang sahabatkuh";
+    String stringLiteral = "\nSelamat datang di program kami!!!";
     System.out.println(stringLiteral);
 
     // Creating String object
@@ -53,14 +53,13 @@ public class ObjectString {
     System.out.println(stringObject);
 
     // String vs StringBuffer
-    String str = "Bangbang"; // Immutable string
-    str.concat(" Beni");
-    str.concat(" Hilwa");
-    System.out.println("Kelompok: " + str);
+    String str = "Pemrograman"; // Immutable string
+    System.out.println("Mata Kuliah: " + str.concat(" Beriorentasi Object"));
 
-    StringBuffer stringBuffer = new StringBuffer("Pemrograman"); // Mutable StringBuffer
-    stringBuffer.append(" Beriorentasi");
-    stringBuffer.append(" Object");
-    System.out.println("Mata kuliah: " + stringBuffer);
+    StringBuffer stringBuffer = new StringBuffer("Kelompok:\n"); // Mutable StringBuffer
+    stringBuffer.append(" - Bangbang Ramadhan\n");
+    stringBuffer.append(" - Beni Mochtar Samiraharja\n");
+    stringBuffer.append(" - Hilwa Kazhimah Khairunnisa\n");
+    System.out.println(stringBuffer);
   }
 }
