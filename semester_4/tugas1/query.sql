@@ -1,0 +1,8 @@
+CREATE TABLE list_tugas (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  title VARCHAR(255) NOT NULL,
+  description TEXT,
+  mata_kuliah VARCHAR(255) NOT NULL,
+  is_completed BOOLEAN DEFAULT FALSE,
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
